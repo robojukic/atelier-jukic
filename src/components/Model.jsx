@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useEffect, useRef, useState } from "react";
 import ModelView from "./ModelView";
+import { useEffect, useRef, useState } from "react";
 import { yellowImg } from "../utils";
 
 import * as THREE from "three";
@@ -18,15 +18,15 @@ const Model = () => {
     img: yellowImg,
   });
 
-  //camera control for the model view
+  // camera control for the model view
   const cameraControlSmall = useRef();
   const cameraControlLarge = useRef();
 
-  //model
+  // model
   const small = useRef(new THREE.Group());
   const large = useRef(new THREE.Group());
 
-  //rotation
+  // rotation
   const [smallRotation, setSmallRotation] = useState(0);
   const [largeRotation, setLargeRotation] = useState(0);
 
@@ -39,19 +39,17 @@ const Model = () => {
         duration: 2,
       });
     }
+
     if (size === "small") {
       animateWithGsapTimeline(tl, large, largeRotation, "#view2", "#view1", {
-        transform: "translate(0)",
+        transform: "translateX(0)",
         duration: 2,
       });
     }
   }, [size]);
 
   useGSAP(() => {
-    gsap.to("#heading", {
-      y: 0,
-      opacity: 1,
-    });
+    gsap.to("#heading", { y: 0, opacity: 1 });
   }, []);
 
   return (
@@ -60,6 +58,7 @@ const Model = () => {
         <h1 id="heading" className="section-heading">
           Take a closer look.
         </h1>
+
         <div className="flex flex-col items-center mt-5">
           <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
             <ModelView
@@ -81,6 +80,7 @@ const Model = () => {
               item={model}
               size={size}
             />
+
             <Canvas
               className="w-full h-full"
               style={{
@@ -96,21 +96,22 @@ const Model = () => {
               <View.Port />
             </Canvas>
           </div>
+
           <div className="mx-auto w-full">
             <p className="text-sm font-light text-center mb-5">{model.title}</p>
+
             <div className="flex-center">
               <ul className="color-container">
                 {models.map((item, i) => (
                   <li
                     key={i}
                     className="w-6 h-6 rounded-full mx-2 cursor-pointer"
-                    style={{
-                      backgroundColor: item.color[0],
-                    }}
+                    style={{ backgroundColor: item.color[0] }}
                     onClick={() => setModel(item)}
                   />
                 ))}
               </ul>
+
               <button className="size-btn-container">
                 {sizes.map(({ label, value }) => (
                   <span
