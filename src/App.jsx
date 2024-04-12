@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PortfolioSmall from "./components/PortfolioSmall";
+import PartnersSmall from "./components/PartnersSmall";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -47,9 +48,8 @@ function App() {
       <Navbar />
       <Hero />
       <PortfolioSmall />
-      <Highlights />
       <Features />
-      <HowItWorks />
+      <PartnersSmall />
       <Footer />
       {/* Return to Top  */}
       {showTopButton && (

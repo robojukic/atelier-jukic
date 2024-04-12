@@ -1,7 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useEffect, useState, useRef } from "react";
-import { animateWithGsap } from "../utils/animations";
 
 const Hero = () => {
   useGSAP(() => {
@@ -13,7 +11,7 @@ const Hero = () => {
       {
         opacity: 1,
         duration: 1.5,
-        delay: 0.6,
+        delay: 0.3,
         stagger: 0.15, // stagger each word with a delay of 0.1s
         ease: "power2.out",
       }
@@ -22,24 +20,25 @@ const Hero = () => {
       opacity: 1,
       y: -50,
       ease: "power2.out",
-      delay: 0.6,
+      delay: 0.4,
     });
     gsap.to("#heroTwo", {
       opacity: 0.8,
       y: -50,
       duration: 1,
-      delay: 1.3,
+      delay: 1.1,
       ease: "power2.out",
     });
   }, []);
 
   return (
-    <section className="w-full nav-height bg-black relative px-6 sm:px-10 md:px-32">
+    <section className="w-full nav-height bg-black relative px-6 sm:px-10 md:px-32 lg:px-44">
       <div className="absolute inset-y-0 right-0 h-full xl:w-3/5">
         <img
-          src="/assets/images/beautiful-brands.png"
+          src="/assets/images/beautiful-brands.webp"
           className="h-full w-full object-cover"
-          alt=""
+          alt="hero-image"
+          loading="eager"
         />
       </div>
       <div className="h-5/6 md:w-1/2 flex-center flex-col">

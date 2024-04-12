@@ -1,6 +1,8 @@
 import { appleImg, bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
 import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,17 +13,41 @@ const Navbar = () => {
       setShowMenu(false);
     }
   };
+
+  useGSAP(() => {
+    gsap.fromTo(
+      "#nav-bar",
+      {
+        opacity: 0,
+        y: -50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        delay: 0.3,
+        ease: "power2.out",
+      }
+    );
+  }, []);
+
   return (
-    <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center">
-      <nav className="flex w-full screen-max-width">
-        <img src={appleImg} alt="Apple" width={14} height={18} />
+    <header className="w-full py-5 px-6 sm:px-10 md:px-32 lg:px-44 flex justify-between items-center">
+      <nav id="nav-bar" className="flex w-full ">
+        <div className="w-20 h-10 flex flex-col font-bold text-sm justify-center ">
+          <span>atelier</span>
+          <span>jukić</span>
+        </div>
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map((nav, i) => (
             <div
               key={i}
-              className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all"
+              className="mx-10 group pb-1 cursor-pointer relative overflow-hidden"
             >
-              {nav}
+              <span className="text-lg text-gray group-hover:text-white transition-all duration-300">
+                {nav}
+              </span>
+              <span className=" absolute bottom-0 -left-[100%] group-hover:left-0 w-full h-[2px] rounded-md bg-primary transition-all duration-300"></span>
             </div>
           ))}
         </div>
