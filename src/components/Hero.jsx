@@ -1,5 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Button from "./common/Button";
 
 const Hero = () => {
   useGSAP(() => {
@@ -22,8 +23,8 @@ const Hero = () => {
       ease: "power2.out",
       delay: 0.4,
     });
-    gsap.to("#heroTwo", {
-      opacity: 0.8,
+    gsap.to(".heroTwo", {
+      opacity: 1,
       y: -50,
       duration: 1,
       delay: 1.1,
@@ -58,10 +59,13 @@ const Hero = () => {
             </span> // Wrapping each word in a span
           ))}
         </h1>
-        <p id="heroTwo" className="opacity-0 pt-10 text-lg">
+        <p className="heroTwo opacity-0 pt-10 text-lg text-gray-200">
           Pouzdajte se u našu stručnost i iskustvo kako biste ostvarili vaše
           ideje i poboljšali vaše poslovanje.
         </p>
+        <div className="w-full items-start flex heroTwo opacity-0 pt-10">
+          <Button buttonText={"Pogledaj više"} />
+        </div>
       </div>
     </section>
   );

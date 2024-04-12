@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`h-screen w-screen flex flex-col fixed z-50 bg-white right-0 left-0 transition-all duration-700 ease-in-out pt-14
+            className={`h-screen w-screen flex flex-col fixed z-50 bg-white right-0 left-0 transition-all duration-500 ease-in-out pt-14
               ${
                 showMenu
                   ? "bottom-0 top-0 opacity-100"

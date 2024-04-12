@@ -19,7 +19,7 @@ const PortfolioSmall = () => {
 
   return (
     <section
-      id="highlights"
+      id="portfolioSmall"
       className="w-screen overflow-hidden h-full common-padding bg-zinc"
     >
       <div className="w-full flex flex-col">
