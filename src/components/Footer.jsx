@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="bg-neutral-700 my-5 h-[1px] w-full" />
         <div className="flex flex-col md:flex-row justify-between md:items-center">
           <p className="font-semibold text-gray text-xs">
-            Copyright @ 2024 Apple Inc. All rights reserved.
+            Copyright @ 2024 Atelier Jukić
           </p>
           <div className="flex">
             {footerLinks.map((link, i) => (

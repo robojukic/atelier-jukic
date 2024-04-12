@@ -1,55 +1,52 @@
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import { heroVideo,smallHeroVideo } from '../utils'
-import { useEffect, useState } from 'react'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { heroVideo, smallHeroVideo } from "../utils";
+import { useEffect, useState, useRef } from "react";
 
 const Hero = () => {
-  const [videoSrc, setVideoSrc] = useState(window.innerWidth<760 ? smallHeroVideo:heroVideo);
-
-  const handleVideoSrcSet = ()=>{
-    if(window.innerWidth<760){
-      setVideoSrc(smallHeroVideo)
-    }else{
-      setVideoSrc(heroVideo)
-    }
-  }
-
-  useEffect(()=>{
-    window.addEventListener('resize',handleVideoSrcSet)
-    return ()=>{
-      window.removeEventListener('resize',handleVideoSrcSet)
-    }
-  },[])
-
-  useGSAP(()=>{
-    gsap.to('#hero',{
-      opacity:1,
-      delay:2
-    })
-
-    gsap.to('#cta',{
-      opacity:1,
-      y:-50,
-      delay:2,
-    })
-  },[])
+  useGSAP(() => {
+    gsap.fromTo(
+      "#heroup span",
+      {
+        opacity: 0,
+        y: -100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        delay: 0.7,
+        stagger: 0.1, // stagger each word with a delay of 0.1s
+      }
+    );
+  }, []);
 
   return (
-    <section className='w-full nav-height bg-black relative'>
-      <div className='h-5/6 w-full flex-center flex-col'>
-        <p id="hero" className='hero-title'>IPhone 15 Pro</p>
-        <div className='md:w-10/12 w-9/12'>
-          <video className='pointer-events-none' autoPlay muted playsInline={true} key={videoSrc}>
-            <source src={videoSrc} type='video/mp4'/>
-          </video>
-        </div>
-      </div>
-      <div id="cta" className='flex flex-col items-center opacity-0 translate-y-20'>
-        <a href="#highlights" className='btn'>Buy</a>
-        <p className='font-normal text-xl'>From $199/month or $999</p>
+    <section className="w-full nav-height bg-black relative px-6 sm:px-10 md:px-32">
+      <div className="h-5/6 md:w-1/2 flex-center flex-col">
+        <h1
+          id="heroup"
+          className="text-4xl font-bold leading-normal md:text-6xl lg:leading-[90px]"
+        >
+          {/** Splitting the sentence into individual words */}
+          {Array.from(
+            "Vaš partner za kreativna reklamna rješenja".split(" ")
+          ).map((word, index) => (
+            <span
+              key={index}
+              className={index === 1 || index === 4 ? "text-primary" : ""}
+            >
+              {word}{" "}
+            </span> // Wrapping each word in a span
+          ))}
+        </h1>
+        <p>
+          Pouzdajte se u našu stručnost i iskustvo kako biste ostvarili vaše
+          ideje i poboljšali vaše poslovanje.
+        </p>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
