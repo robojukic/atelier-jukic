@@ -42,7 +42,7 @@ const Features = () => {
             Ponuda <span className="text-primary">usluga</span>
           </h1>
           <div className="w-1/2">
-            <p className=" text-gray-200 text-xl">
+            <p className=" text-gray-200 text-xl pb-20">
               Specijalizirani smo za dizajniranje i kreiranje širokog spektra
               reklamnih materijala, uključujući{" "}
               <span className="text-primary font-semibold">3D reklame</span>,
@@ -51,7 +51,7 @@ const Features = () => {
           </div>
         </div>
         <div className="flex flex-col w-full justify-center items-center overflow-hidden">
-          <div className="flex-center flex-col sm:px-10">
+          <div className="w-full flex-center flex-col">
             <div className="relative h-[50vh] w-full flex items-center">
               <video
                 playsInline
