@@ -1,8 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
-import { rightImg, watchImg } from "../utils";
-import VideoCarousel from "./VideoCarousel";
+import { rightImg } from "../utils";
 
 const Highlights = () => {
   useGSAP(() => {
@@ -29,10 +28,7 @@ const Highlights = () => {
             Get the highlights.
           </h1>
           <div className="flex flex-wrap items-end gap-5">
-            <p className="link">
-              Watch the film
-              <img src={watchImg} alt="watch" className="ml-2" />
-            </p>
+            <p className="link">Watch the film</p>
             <p className="link">
               Watch the event
               <img src={rightImg} alt="watch" className="ml-2" />

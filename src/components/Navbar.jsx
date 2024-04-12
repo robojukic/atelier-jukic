@@ -1,4 +1,4 @@
-import { appleImg, bagImg, searchImg } from "../utils";
+import { searchImg } from "../utils";
 import { navLists } from "../constants";
 import { useState } from "react";
 import { useGSAP } from "@gsap/react";
