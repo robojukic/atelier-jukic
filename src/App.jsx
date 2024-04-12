@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PortfolioSmall from "./components/PortfolioSmall";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -45,6 +46,7 @@ function App() {
     <main className="bg-black">
       <Navbar />
       <Hero />
+      <PortfolioSmall />
       <Highlights />
       <Features />
       <HowItWorks />

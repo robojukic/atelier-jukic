@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { heroVideo, smallHeroVideo } from "../utils";
 import { useEffect, useState, useRef } from "react";
+import { animateWithGsap } from "../utils/animations";
 
 const Hero = () => {
   useGSAP(() => {
@@ -9,20 +9,39 @@ const Hero = () => {
       "#heroup span",
       {
         opacity: 0,
-        y: -100,
       },
       {
         opacity: 1,
-        y: 0,
         duration: 1.5,
-        delay: 0.7,
-        stagger: 0.1, // stagger each word with a delay of 0.1s
+        delay: 0.6,
+        stagger: 0.15, // stagger each word with a delay of 0.1s
+        ease: "power2.out",
       }
     );
+    gsap.to("#heroup", {
+      opacity: 1,
+      y: -50,
+      ease: "power2.out",
+      delay: 0.6,
+    });
+    gsap.to("#heroTwo", {
+      opacity: 0.8,
+      y: -50,
+      duration: 1,
+      delay: 1.3,
+      ease: "power2.out",
+    });
   }, []);
 
   return (
     <section className="w-full nav-height bg-black relative px-6 sm:px-10 md:px-32">
+      <div className="absolute inset-y-0 right-0 h-full xl:w-3/5">
+        <img
+          src="/assets/images/beautiful-brands.png"
+          className="h-full w-full object-cover"
+          alt=""
+        />
+      </div>
       <div className="h-5/6 md:w-1/2 flex-center flex-col">
         <h1
           id="heroup"
@@ -40,7 +59,7 @@ const Hero = () => {
             </span> // Wrapping each word in a span
           ))}
         </h1>
-        <p>
+        <p id="heroTwo" className="opacity-0 pt-10 text-lg">
           Pouzdajte se u našu stručnost i iskustvo kako biste ostvarili vaše
           ideje i poboljšali vaše poslovanje.
         </p>
