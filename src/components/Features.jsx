@@ -32,20 +32,25 @@ const Features = () => {
     });
   }, []);
   return (
-    <section className="h-full common-padding bg-zinc relative overflow-hidden">
-      <div className="screen-max-width">
-        <div className="mb-12 w-full">
-          <h1 id="features_title" className="section-heading">
-            Explore the full story.
+    <section className="h-full relative overflow-hidden px-6 sm:px-10 md:px-32 lg:px-44">
+      <div className="">
+        <div className=" w-full flex flex-col">
+          <h1
+            id="features"
+            className="my-12 pt-6 text-4xl font-bold leading-normal md:text-6xl lg:leading-[90px]"
+          >
+            Ponuda <span className="text-primary">usluga</span>
           </h1>
-        </div>
-        <div className="flex flex-col justify-center items-center overflow-hidden">
-          <div className="mt-32 mb-24 pl-24">
-            <h2 className="text-5xl lg:text-7xl font-semibold">iPhone.</h2>
-            <h2 className="text-5xl lg:text-7xl font-semibold">
-              Forged in titanium.
-            </h2>
+          <div className="w-1/2">
+            <p className=" text-gray-200 text-xl">
+              Specijalizirani smo za dizajniranje i kreiranje širokog spektra
+              reklamnih materijala, uključujući{" "}
+              <span className="text-primary font-semibold">3D reklame</span>,
+              svijetleće reklame, letke, plakate i još mnogo toga.
+            </p>
           </div>
+        </div>
+        <div className="flex flex-col w-full justify-center items-center overflow-hidden">
           <div className="flex-center flex-col sm:px-10">
             <div className="relative h-[50vh] w-full flex items-center">
               <video
@@ -64,14 +69,14 @@ const Features = () => {
               <div className="feature-video-container">
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
-                    src={explore1Img}
+                    src="/assets/images/portfolio10.jpg"
                     alt="titanium"
                     className="feature-video g_growFeatures"
                   />
                 </div>
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
-                    src={explore2Img}
+                    src="/assets/images/portfolio3.jpg"
                     alt="titanium2"
                     className="feature-video g_growFeatures"
                   />

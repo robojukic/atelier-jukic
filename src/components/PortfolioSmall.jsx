@@ -168,7 +168,7 @@ const PortfolioSmall = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="hidden sm:block">
             <div className="project space-y-2">
               <div className="w-full h-full flex overflow-hidden">
                 <img
@@ -186,7 +186,7 @@ const PortfolioSmall = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="hidden sm:block">
             <div className="project space-y-2">
               <div className="w-full h-full flex overflow-hidden">
                 <img

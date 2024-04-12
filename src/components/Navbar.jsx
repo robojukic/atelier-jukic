@@ -16,7 +16,7 @@ const Navbar = () => {
 
   useGSAP(() => {
     gsap.fromTo(
-      "#nav-bar",
+      ".nav-bar-anim",
       {
         opacity: 0,
         y: -50,
@@ -32,13 +32,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="w-full py-5 px-6 sm:px-10 md:px-32 lg:px-44 flex justify-between items-center">
-      <nav id="nav-bar" className="flex w-full ">
-        <div className="w-20 h-10 flex flex-col font-bold text-sm justify-center ">
-          <span>atelier</span>
-          <span>jukić</span>
+    <header className="w-full py-5 sm:px-10 md:px-32 lg:px-44 flex justify-between items-center">
+      <nav className="flex w-full px-6 sm:px-0">
+        <div className="w-20 h-10 flex flex-col font-extrabold text-sm justify-center nav-bar-anim">
+          <span>Atelier</span>
+          <span>Jukić</span>
         </div>
-        <div className="flex flex-1 justify-center max-sm:hidden">
+        <div className="flex flex-1 justify-center max-sm:hidden nav-bar-anim">
           {navLists.map((nav, i) => (
             <div
               key={i}
@@ -51,14 +51,14 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-baseline pr-6 md:pr-0 max-sm:justify-end max-sm:flex-1">
+        <div className="flex items-baseline pr-6 md:pr-0 max-sm:justify-end max-sm:flex-1 nav-bar-anim">
           <img src={searchImg} alt="search" width={18} height={18} />
         </div>
         {/* Mobile menu bar */}
         <div className="flex lg:hidden flex-col">
           <div className="w-8" onClick={toggleMenu}>
             <div
-              className="w-8 h-6 flex flex-col justify-between z-50"
+              className="w-8 h-6 flex flex-col justify-between z-50 nav-bar-anim"
               onClick={toggleMenu}
             >
               <span
@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`h-screen w-screen flex flex-col fixed z-20 bg-white right-0 left-0 transition-all duration-500 ease-in-out pt-14
+            className={`h-screen w-screen flex flex-col fixed z-50 bg-white right-0 left-0 transition-all duration-700 ease-in-out pt-14
               ${
                 showMenu
                   ? "bottom-0 top-0 opacity-100"
