@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import PortfolioSmall from "./components/PortfolioSmall";
-import PartnersSmall from "./components/PartnersSmall";
-import Features from "./components/Features";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 import * as Sentry from "@sentry/react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Usluge from "./pages/Usluge";
+import Onama from "./pages/Onama";
+import Kontakt from "./pages/Kontakt";
+import Reference from "./pages/Reference";
 
 function App() {
   const [showTopButton, setShowTopButton] = useState(false);
@@ -44,10 +46,14 @@ function App() {
   return (
     <main className="bg-black">
       <Navbar />
-      <Hero />
-      <PortfolioSmall />
-      <Features />
-      <PartnersSmall />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/onama" element={<Onama />} />
+        <Route path="/usluge" element={<Usluge />} />
+        <Route path="/reference" element={<Reference />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+      </Routes>
+
       <Footer />
       {/* Return to Top  */}
       {showTopButton && (

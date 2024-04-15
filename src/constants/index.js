@@ -6,11 +6,11 @@ import {
 } from "../utils";
 
 export const navLists = [
-  { name: "Naslovna", link: "" },
-  { name: "O nama", link: "" },
-  { name: "Usluge", link: "" },
-  { name: "Reference", link: "" },
-  { name: "Kontakt", link: "" },
+  { name: "Naslovna", link: "/" },
+  { name: "O nama", link: "/onama" },
+  { name: "Usluge", link: "/usluge" },
+  { name: "Reference", link: "/reference" },
+  { name: "Kontakt", link: "/kontakt" },
 ];
 
 export const hightlightsSlides = [

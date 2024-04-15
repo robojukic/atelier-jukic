@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
 import { animateWithGsap } from "../utils/animations";
+import Button from "./common/Button";
 
 const PortfolioSmall = () => {
   useGSAP(() => {
