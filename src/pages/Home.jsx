@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import PortfolioSmall from "../components/PortfolioSmall";
 import PartnersSmall from "../components/PartnersSmall";
 import Features from "../components/Features";
+import KontaktSmall from "../components/KontaktSmall";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <PortfolioSmall />
       <Features />
       <PartnersSmall />
+      <KontaktSmall />
     </div>
   );
 };

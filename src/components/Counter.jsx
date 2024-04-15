@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 const Counter = () => {
   return (
-    <div className="w-full bg-black relative px-6 sm:px-10 md:px-32 lg:px-44">
+    <div className="w-full bg-black relative ">
       <div className="grid gap-[30px] sm:grid-cols-2 lg:grid-cols-4 bg-black">
         <div data-aos="fade-up" data-aos-duration="1000">
           <div className="group flex cursor-pointer justify-center items-baseline rounded-3xl   py-8 px-6 transition duration-500 hover:border-primary  border-transparent bg-zinc hover:bg-primary">
