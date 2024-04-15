@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-auto bg-zinc px-6 sm:px-10 md:px-32 lg:px-44">
       <div className="container">
-        <div className="grid gap-y-10 gap-x-4 py-14 sm:grid-cols-3 lg:grid-cols-5 lg:py-[100px]">
+        <div className="grid gap-y-10 gap-x-4 py-14 sm:grid-cols-3 lg:grid-cols-4 lg:py-[100px]">
           <div className="relative">
             <img
               src="/assets/images/logo.png"
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
           <div>
             <ul className="flex flex-col gap-4 font-semibold">
-              <li className="mb-3 text-xl font-bold text-white">Meni</li>
+              <li className="mb-3 text-xl font-bold text-primary">Meni</li>
               <li>
                 <a
                   href="/"
@@ -121,7 +121,7 @@ const Footer = () => {
           </div>
           <div>
             <ul className="flex flex-col gap-4 font-semibold">
-              <li className="mb-3 text-xl font-bold text-white">Services</li>
+              <li className="mb-3 text-xl font-bold text-primary">Usluge</li>
               <li>
                 <a
                   href="/services-detail"
@@ -156,46 +156,10 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
           <div>
             <ul className="flex flex-col gap-4 font-semibold">
-              <li className="mb-3 text-xl font-bold text-white">Legal</li>
-              <li>
-                <a
-                  href="/terms-conditions"
-                  className="inline-block transition hover:scale-110 hover:text-secondary"
-                >
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/privacy-policy"
-                  className="inline-block transition hover:scale-110 hover:text-secondary"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/faq"
-                  className="inline-block transition hover:scale-110 hover:text-secondary"
-                >
-                  FAQs
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/blog"
-                  className="inline-block transition hover:scale-110 hover:text-secondary"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul className="flex flex-col gap-4 font-semibold">
-              <li className="mb-3 text-xl font-bold text-white">Kontakt</li>
+              <li className="mb-3 text-xl font-bold text-primary">Kontakt</li>
               <li>Atelier Jukić</li>
               <li>
                 Busari bb | 88240 Posušje

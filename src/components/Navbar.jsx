@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`h-screen w-screen flex flex-col fixed z-50 bg-white right-0 left-0 transition-all duration-500 ease-in-out pt-14
+            className={`h-screen w-screen flex flex-col fixed z-50 bg-zinc right-0 left-0 transition-all duration-500 ease-in-out pt-14
               ${
                 showMenu
                   ? "bottom-0 top-0 opacity-100"
@@ -90,19 +90,29 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 <span
-                  className={`w-10 h-1 rounded transition-all bg-black duration-500 bg-white-70 ${
+                  className={`w-10 h-1 rounded transition-all bg-white duration-500 ${
                     showMenu ? "rotate-45 origin-left" : ""
                   }`}
                 ></span>
                 <span
-                  className={`w-10 h-1 rounded transition-all bg-black duration-500 bg-white-70 ${
+                  className={`w-10 h-1 rounded transition-all bg-white duration-500 ${
                     showMenu ? "-rotate-45 origin-left" : ""
                   }`}
                 ></span>
               </div>
             </div>
-            <div className="flex flex-col w-full h-full items-center justify-center gap-8 pb-10">
-              {/* Render your menu items here */}
+            <div className="flex flex-col w-full h-full items-center justify-center gap-10 pb-10">
+              {navLists.map((nav, i) => (
+                <div
+                  key={i}
+                  className="group cursor-pointer relative overflow-hidden"
+                >
+                  <span className="text-2xl text-gray-200  group-hover:text-white transition-all duration-300">
+                    {nav.name}
+                  </span>
+                  <span className=" absolute bottom-0 -left-[100%] group-hover:left-0 w-full h-[2px] rounded-md bg-primary transition-all duration-300"></span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

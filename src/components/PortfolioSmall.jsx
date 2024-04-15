@@ -26,14 +26,14 @@ const PortfolioSmall = () => {
         <div className="projects grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-1.5 md:grid-cols-5">
           <div className="">
             <div className="project space-y-2">
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
-                  className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
+                  className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer "
                   src="/assets/images/projects/zrinjski.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-20 cursor-pointer"
                   src="/assets/images/projects/globalsoft.jpg"
@@ -44,14 +44,14 @@ const PortfolioSmall = () => {
           </div>
           <div className="">
             <div className="project space-y-2">
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/markota.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/love.jpg"
@@ -62,14 +62,14 @@ const PortfolioSmall = () => {
           </div>
           <div className="">
             <div className="project space-y-2">
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/vrtnaterasa.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/sweets.jpg"
@@ -80,14 +80,14 @@ const PortfolioSmall = () => {
           </div>
           <div className="">
             <div className="project space-y-2">
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/oli2.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/otok.jpg"
@@ -98,14 +98,14 @@ const PortfolioSmall = () => {
           </div>
           <div className="">
             <div className="project space-y-2">
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/zrinjski1.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/svijet.jpg"
@@ -116,14 +116,14 @@ const PortfolioSmall = () => {
           </div>
           <div className="">
             <div className="project space-y-2">
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/oli.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/cvijetni.jpg"
@@ -132,16 +132,16 @@ const PortfolioSmall = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="hidden sm:block">
             <div className="project space-y-2">
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/viktorija.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/globalsoft1.jpg"
@@ -150,16 +150,16 @@ const PortfolioSmall = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="hidden sm:block">
             <div className="project space-y-2">
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/letsgetsocial.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/emporio1.jpg"
@@ -170,14 +170,14 @@ const PortfolioSmall = () => {
           </div>
           <div className="hidden sm:block">
             <div className="project space-y-2">
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/mjenjacnica.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/pasike.jpg"
@@ -188,14 +188,14 @@ const PortfolioSmall = () => {
           </div>
           <div className="hidden sm:block">
             <div className="project space-y-2">
-              <div className="w-full h-72 flex overflow-hidden">
+              <div className="w-full h-72 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover g_grow scale-150 opacity-0 cursor-pointer"
                   src="/assets/images/projects/sinsay.jpg"
                   alt=""
                 />
               </div>
-              <div className="w-full h-48 flex overflow-hidden">
+              <div className="w-full h-48 flex overflow-hidden hover:opacity-80 transition duration-200">
                 <img
                   className="h-full w-full object-cover  g_shrink scale-100 opacity-0 cursor-pointer"
                   src="/assets/images/projects/markota1.jpg"
