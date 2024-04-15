@@ -41,7 +41,7 @@ const Features = () => {
           >
             Ponuda <span className="text-primary">usluga</span>
           </h1>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <p className=" text-gray-200 text-xl pb-20">
               Specijalizirani smo za dizajniranje i kreiranje širokog spektra
               reklamnih materijala, uključujući{" "}
@@ -69,14 +69,14 @@ const Features = () => {
               <div className="feature-video-container">
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
-                    src="/assets/images/portfolio10.jpg"
+                    src="/assets/images/projects/zrinjski.jpg"
                     alt="titanium"
                     className="feature-video g_growFeatures"
                   />
                 </div>
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
-                    src="/assets/images/portfolio3.jpg"
+                    src="/assets/images/projects/globalsoft.jpg"
                     alt="titanium2"
                     className="feature-video g_growFeatures"
                   />

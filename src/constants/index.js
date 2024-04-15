@@ -5,7 +5,13 @@ import {
   highlightThirdVideo,
 } from "../utils";
 
-export const navLists = ["Naslovna", "O nama", "Reference", "Kontakt"];
+export const navLists = [
+  { name: "Naslovna", link: "" },
+  { name: "O nama", link: "" },
+  { name: "Usluge", link: "" },
+  { name: "Reference", link: "" },
+  { name: "Kontakt", link: "" },
+];
 
 export const hightlightsSlides = [
   {

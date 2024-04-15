@@ -43,7 +43,7 @@ const Navbar = () => {
               className="mx-10 group pb-1 cursor-pointer relative overflow-hidden"
             >
               <span className="text-lg text-gray group-hover:text-white transition-all duration-300">
-                {nav}
+                {nav.name}
               </span>
               <span className=" absolute bottom-0 -left-[100%] group-hover:left-0 w-full h-[2px] rounded-md bg-primary transition-all duration-300"></span>
             </div>
